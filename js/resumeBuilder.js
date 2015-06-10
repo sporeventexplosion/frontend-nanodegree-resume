@@ -8,7 +8,7 @@ var bio = {
     "email": "random@example.com",
     "github": "randomperson2574",
     "twitter": "@random433",
-    "location": "Qeqqata, Greenland",
+    "location": "Qeqqata, Greenland"
   },
   "welcomeMessage": "*Insert welcome message here*",
   "skills": [

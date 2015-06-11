@@ -104,3 +104,8 @@ var projects = {
     }
   ]
 };
+
+//A quick function for formatting the template strings
+var formatHTML = function (templateString, str) {
+  return templateString.replace("%data%", str);
+};

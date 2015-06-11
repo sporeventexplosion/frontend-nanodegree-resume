@@ -62,3 +62,22 @@ var education = {
     }
   ]
 };
+
+var work = {
+  "jobs": [
+    {
+      "employer": "Employer No. 1",
+      "title": "Title No. 1",
+      "location": "Deseado Dept, Santa Cruz Province, Argentina",
+      "dates": "September 14, 2009 - May 22, 2011",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "employer": "Employer No. 2",
+      "title": "Title No. 2",
+      "location": "Banks Island, NT, Canada",
+      "dates": "June 18, 2011 - Present",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+};

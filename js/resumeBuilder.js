@@ -109,3 +109,28 @@ var projects = {
 var formatHTML = function (templateString, str) {
   return templateString.replace("%data%", str);
 };
+
+bio.display = function () {
+  var header = $("#header"); //Query all DOM elements first to avoid multiple queries.
+  var contacts = $("#topContacts");
+  header.prepend(formatHTML(HTMLheaderRole, this.role));//Prepend is required so the list of contacts stay at the bottom. Order also needs to be reversed.
+  header.prepend(formatHTML(HTMLheaderName, this.name));
+
+  contacts.append(formatHTML(HTMLmobile, this.contacts.mobile));
+  contacts.append(formatHTML(HTMLemail, this.contacts.email));
+  contacts.append(formatHTML(HTMLgithub, this.contacts.github));
+  contacts.append(formatHTML(HTMLtwitter, this.contacts.twitter));
+  contacts.append(formatHTML(HTMLlocation, this.contacts.location));
+
+  header.append(formatHTML(HTMLwelcomeMsg, this.welcomeMessage));
+  header.append(formatHTML(HTMLbioPic, this.biopic));
+
+  header.append(HTMLskillsStart);
+
+  var skills = $("#skills"); //This has to be queried later due to being only added by the previous line
+
+  for (var i in this.skills) {
+    skills.append(formatHTML(HTMLskills, this.skills[i]));
+  }
+
+};

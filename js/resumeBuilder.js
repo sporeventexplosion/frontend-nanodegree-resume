@@ -31,7 +31,7 @@ var education = {
         "Major 2",
         "Major 3"
       ],
-      "dates": , 12312001// Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
+      "dates": 12312001, // Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
       "url": "http://www.example.com/"
     },
     {
@@ -61,4 +61,8 @@ var education = {
       "url": "http://www.example.com/"
     }
   ]
+};
+
+var work = {
+  "jobs": 3
 };

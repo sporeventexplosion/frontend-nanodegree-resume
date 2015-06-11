@@ -134,3 +134,18 @@ bio.display = function () {
   }
 
 };
+
+work.display = function () {
+  var jobs = $("#workExperience");
+
+  for (var i in this.jobs) {
+    jobs.append(HTMLworkStart);
+
+    var lastWorkEntry = $(".work-entry:last"); //Get the last work entry i.e. the one just appended
+
+    lastWorkEntry.append(formatHTML(HTMLworkEmployer, this.jobs[i].employer) + formatHTML(HTMLworkTitle, this.jobs[i].title)); //HTMLworkEmployer and HTMLworkTitle are actually two halves of the same <a> element so they have to be concatenated
+    lastWorkEntry.append(formatHTML(HTMLworkLocation, this.jobs[i].location));
+    lastWorkEntry.append(formatHTML(HTMLworkDates, this.jobs[i].dates));
+    lastWorkEntry.append(formatHTML(HTMLworkDescription, this.jobs[i].description));
+  }
+}

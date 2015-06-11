@@ -81,3 +81,26 @@ var work = {
     }
   ]
 };
+
+var projects = {
+  "projects": [
+    {
+      "title": "Project No. 1",
+      "dates": "August 2, 2013 - November 29, 2014",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "images": [
+        "images/197x148.gif",
+        "images/197x148.gif"
+      ]
+    },
+    {
+      "title": "Project No. 2",
+      "dates": "June 5, 2014 - Present",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "images": [
+        "images/197x148.gif",
+        "images/197x148.gif"
+      ]
+    }
+  ]
+}

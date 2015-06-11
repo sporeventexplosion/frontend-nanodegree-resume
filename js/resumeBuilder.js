@@ -31,7 +31,7 @@ var education = {
         "Major 2",
         "Major 3"
       ],
-      "dates": 1009843200000, // 1/1/2002 00:00:00 UTC in Unix timestamp format (msec)
+      "dates": , 12312001// Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
       "url": "http://www.example.com/"
     },
     {
@@ -43,7 +43,7 @@ var education = {
         "Major 2",
         "Major 3"
       ],
-      "dates": 1104537600000,
+      "dates": 12312004,
       "url": "http://www.example.com/"
     }
   ],
@@ -51,13 +51,13 @@ var education = {
     {
       "title": "Course No. 1",
       "school": "The Random Online Course Corporation",
-      "date": 1199145600000,
+      "date": 12312007,
       "url": "http://www.example.com/"
     },
     {
       "title": "Course No. 2",
       "school": "The Random Online Course Corporation",
-      "date": 1230768000000,
+      "date": 12312008,
       "url": "http://www.example.com/"
     }
   ]

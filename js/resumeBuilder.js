@@ -148,4 +148,4 @@ work.display = function () {
     lastWorkEntry.append(formatHTML(HTMLworkDates, this.jobs[i].dates));
     lastWorkEntry.append(formatHTML(HTMLworkDescription, this.jobs[i].description));
   }
-}
+};

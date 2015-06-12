@@ -154,7 +154,7 @@ bio.display = function () {
 
   var skills = $('#skills'); //This has to be queried later due to being only added by the previous line
 
-  for (var i in this.skills) {
+  for (var i = 0; i < this.skills.length; i++) {
     skills.append(formatHTML(HTMLskills, this.skills[i]));
   }
 
@@ -163,14 +163,14 @@ bio.display = function () {
 education.display = function () {
   var educationDiv = $('#education');
   //First loop through all the schools
-  for (var i in this.schools) {
+  for (var i = 0; i < this.schools.length; i++) {
     educationDiv.append(HTMLschoolStart);
     var lastSchoolEntry = $('.education-entry:last'); //Gets the school entry just added
     lastSchoolEntry.append(formatHTML(HTMLschoolName, this.schools[i].name) + formatHTML(HTMLschoolDegree, this.schools[i].degree)); //Again, concatenation has to be done HTMLschoolName and HTMLschoolDegree are not fully formed HTML elements
     lastSchoolEntry.append(formatHTML(HTMLschoolDates, resolveDate(this.schools[i].dates))); //Formats the date before displaying it
     lastSchoolEntry.append(formatHTML(HTMLschoolLocation, this.schools[i].location));
     //Display majors
-    for (var j in this.schools[i].majors) {
+    for (var j = 0; j < this.schools[i].majors.length; j++) {
       lastSchoolEntry.append(formatHTML(HTMLschoolMajor, this.schools[i].majors[j]));
     }
   }
@@ -178,7 +178,7 @@ education.display = function () {
   //Add the Online Classes title
   educationDiv.append(HTMLonlineClasses);
 
-  for (var i in this.onlineCourses) {
+  for (var i = 0; i < this.onlineCourses.length; i++) {
     educationDiv.append(HTMLschoolStart);
 
     var lastCourseEntry = $('.education-entry:last');
@@ -191,7 +191,7 @@ education.display = function () {
 work.display = function () {
   var jobs = $('#workExperience');
 
-  for (var i in this.jobs) {
+  for (var i = 0; i < this.jobs.length; i++) {
     jobs.append(HTMLworkStart);
 
     var lastWorkEntry = $('.work-entry:last'); //Get the last work entry i.e. the one just appended
@@ -206,7 +206,7 @@ work.display = function () {
 projects.display = function () {
   var projectsDiv = $('#projects');
 
-  for (var i in this.projects) {
+  for (var i = 0; i < this.projects.length; i++) {
     projectsDiv.append(HTMLprojectStart);
 
     var lastProjectEntry = $('.project-entry:last');
@@ -216,7 +216,7 @@ projects.display = function () {
     lastProjectEntry.append(formatHTML(HTMLprojectDescription, this.projects[i].description));
 
     //Insert images
-    for (var j in this.projects[i].images) {
+    for (var j = 0; j < this.projects[i].images.length; j++) {
       lastProjectEntry.append(formatHTML(HTMLprojectImage, this.projects[i].images[j]));
     }
   }

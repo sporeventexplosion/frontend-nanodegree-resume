@@ -136,7 +136,8 @@ var resolveDate = function ( date ) {
 
 bio.display = function () {
   var header = $("#header"); //Query all DOM elements first to avoid multiple queries.
-  var contacts = $("#topContacts");
+  var contacts = $("#topContacts, #footerContacts");
+
   header.prepend(formatHTML(HTMLheaderRole, this.role));//Prepend is required so the list of contacts stay at the bottom. Order also needs to be reversed.
   header.prepend(formatHTML(HTMLheaderName, this.name));
 

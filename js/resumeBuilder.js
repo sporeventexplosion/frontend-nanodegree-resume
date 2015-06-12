@@ -220,3 +220,6 @@ projects.display = function () {
     }
   }
 };
+
+//Display the map in #mapdiv
+$("#mapDiv").append(googleMap);

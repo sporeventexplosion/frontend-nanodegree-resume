@@ -110,6 +110,30 @@ var formatHTML = function (templateString, str) {
   return templateString.replace("%data%", str);
 };
 
+//A function for resolving the mm-dd-yyyy integer date to a string. Invalid input is not explicitly handled
+var resolveDate = function ( date ) {
+
+  var months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+
+  var month = (date - date % 1000000) / 1000000;
+  var day = (date % 1000000 - date % 10000) / 10000;
+  var year = date % 10000;
+  return months[month - 1] + " " + day + ", " + year; //The day and year will be automatically converted to a string. 1 is subtracted to make sure the index is correct.
+}
+
 bio.display = function () {
   var header = $("#header"); //Query all DOM elements first to avoid multiple queries.
   var contacts = $("#topContacts");

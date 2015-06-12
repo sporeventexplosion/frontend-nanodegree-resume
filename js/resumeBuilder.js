@@ -159,6 +159,34 @@ bio.display = function () {
 
 };
 
+education.display = function () {
+  var educationDiv = $("#education");
+  //First loop through all the schools
+  for (var i in this.schools) {
+    educationDiv.append(HTMLschoolStart);
+    var lastSchoolEntry = $(".education-entry:last"); //Gets the school entry just added
+    lastSchoolEntry.append(formatHTML(HTMLschoolName, this.schools[i].name) + formatHTML(HTMLschoolDegree, this.schools[i].degree)); //Again, concatenation has to be done HTMLschoolName and HTMLschoolDegree are not fully formed HTML elements
+    lastSchoolEntry.append(formatHTML(HTMLschoolDates, resolveDate(this.schools[i].dates))); //Formats the date before displaying it
+    lastSchoolEntry.append(formatHTML(HTMLschoolLocation, this.schools[i].location));
+    //Display majors
+    for (var j in this.schools[i].majors) {
+      lastSchoolEntry.append(formatHTML(HTMLschoolMajor, this.schools[i].majors[j]));
+    }
+  }
+
+  //Add the Online Classes title
+  educationDiv.append(HTMLonlineClasses);
+
+  for (var i in this.onlineCourses) {
+    educationDiv.append(HTMLschoolStart);
+
+    var lastCourseEntry = $(".education-entry:last");
+    lastCourseEntry.append(formatHTML(HTMLonlineTitle, this.onlineCourses[i].title) + formatHTML(HTMLonlineSchool, this.onlineCourses[i].school));
+    lastCourseEntry.append(formatHTML(HTMLonlineDates, resolveDate(this.onlineCourses[i].date)));
+    lastCourseEntry.append(formatHTML(HTMLonlineURL, this.onlineCourses[i].url));
+  }
+};
+
 work.display = function () {
   var jobs = $("#workExperience");
 

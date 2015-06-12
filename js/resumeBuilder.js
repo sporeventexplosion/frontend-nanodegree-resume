@@ -201,3 +201,22 @@ work.display = function () {
     lastWorkEntry.append(formatHTML(HTMLworkDescription, this.jobs[i].description));
   }
 };
+
+projects.display = function () {
+  var projectsDiv = $("#projects");
+
+  for (var i in this.projects) {
+    projectsDiv.append(HTMLprojectStart);
+
+    var lastProjectEntry = $(".project-entry:last");
+
+    lastProjectEntry.append(formatHTML(HTMLprojectTitle, this.projects[i].title));
+    lastProjectEntry.append(formatHTML(HTMLprojectDates, this.projects[i].dates));
+    lastProjectEntry.append(formatHTML(HTMLprojectDescription, this.projects[i].description));
+
+    //Insert images
+    for (var j in this.projects[i].images) {
+      lastProjectEntry.append(formatHTML(HTMLprojectImage, this.projects[i].images[j]));
+    }
+  }
+};

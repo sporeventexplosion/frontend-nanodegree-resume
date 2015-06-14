@@ -120,6 +120,10 @@ a {
   background-color: #484848;
 }
 
+.header-role {
+  color: #fff;
+}
+
 .flex-box {
   display: -webkit-flex;
   display: flex;

@@ -92,8 +92,8 @@ var projects = {
       'dates': 'August 2014',
       'description': 'With a capacity of over 200,000, this is my largest cruise ship design (yet).',
       'images': [
-        'images/cruise_ship_1.png',
-        'images/cruise_ship_2.png'
+        'images/fouzzship_1_lg.png',
+        'images/fouzzship_2_lg.png'
       ]
     },
     {
@@ -101,8 +101,8 @@ var projects = {
       'dates': 'October 2014 - Present',
       'description': 'A website for a "small company". Made to look similar to Apple\'s',
       'images': [
-        'images/rittybox_1.png',
-        'images/rittybox_2.png'
+        'images/rittybox_1_lg.png',
+        'images/rittybox_2_lg.png'
       ]
     }
   ]
@@ -220,7 +220,8 @@ projects.display = function () {
 
     //Insert images
     for (var j = 0; j < this.projects[i].images.length; j++) {
-      lastProjectEntry.append(formatHTML(HTMLprojectImage, this.projects[i].images[j]));
+      //Put the image in a wrapper so it can be sized
+      $('<div>').addClass('project-image-wrapper').append(formatHTML(HTMLprojectImage, this.projects[i].images[j])).appendTo(lastProjectEntry);
     }
   }
 };

@@ -232,3 +232,12 @@ span {
     width: 50%;
   }
 }
+
+.project-image-wrapper {
+  min-height: 16em;
+}
+
+.project-image {
+  background-color: #eee; /*Shade the padding and transparent parts*/
+  width: 100%;
+}

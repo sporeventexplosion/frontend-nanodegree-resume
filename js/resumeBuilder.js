@@ -1,64 +1,74 @@
 'use strict';
 
 var bio = {
-  'name': 'Random Guy',
-  'role': 'Web Developer',
+  'name': 'Hanwen Liu',
+  'role': 'Professional Student',
   'contacts': {
-    'mobile': '+1 555-555-5555',
-    'email': 'random@example.com',
-    'github': 'randomperson2574',
-    'twitter': '@random433',
-    'location': 'Qeqqata, Greenland'
+    'mobile': 'N/A',
+    'email': 'fouzzerjunk@gmail.com',
+    'github': 'sporeventexplosion',
+    'twitter': '@fouzzerjunk',
+    'location': 'İzmir, Turkey'
   },
-  'welcomeMessage': '*Insert welcome message here*',
+  'welcomeMessage': '[Process exited with status 0] ... The crowd goes crazy.',
   'skills': [
-    'Skill 1',
-    'Skill 2',
-    'Skill 3'
+    'PHP',
+    'JavaScript',
+    '3D Modeling',
+    'HTML/CSS',
+    'Creativity'
   ],
-  'biopic': 'images/fry.jpg'
+  'biopic': 'images/icon.png'
 };
 
 
 var education = {
   'schools': [
     {
-      'name': 'School No. 1',
-      'location': 'Kolsky District, Murmansk Oblast, Russia',
-      'degree': '*Insert name of degree here*',
+      'name': 'Chinese elementary school',
+      'location': 'Beijing, China',
+      'degree': 'No degree received (Not in a university ... yet)',
       'majors': [
-        'Major 1',
-        'Major 2',
-        'Major 3'
+        'Getting kicked out of class',
+        'Low-speed Homework Completion!!',
       ],
-      'dates': 12312001, // Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
-      'url': 'http://www.example.com/'
+      'dates': 4312010, // Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
+      'url': '' //Not applicable
     },
     {
-      'name': 'School No. 2',
-      'location': 'Yukon-Koyukuk, AK, United States',
-      'degree': '*Insert name of degree here*',
+      'name': 'Canadian elementary school',
+      'location': 'Ottawa, ON, Canada',
+      'degree': 'N/A',
       'majors': [
-        'Major 1',
-        'Major 2',
-        'Major 3'
+        'General education',
+        'Not getting kicked out of class'
       ],
-      'dates': 12312004,
-      'url': 'http://www.example.com/'
+      'dates': 4242014,
+      'url': 'http://www.ocdsb.ca/'
+    },
+    {
+      'name': 'A certain Turkish international school',
+      'location': 'İzmir, Turkey',
+      'degree': 'N/A',
+      'majors': [
+        'Getting bored'
+      ],
+      'dates': 3042015,
+      'url': 'http://www.ocdsb.ca/'
     }
   ],
   'onlineCourses': [
     {
-      'title': 'Course No. 1',
-      'school': 'The Random Online Course Corporation',
+      'title': 'How to use Git and Github',
+      'school': 'Udacity',
       'date': 12312007,
-      'url': 'http://www.example.com/'
+      'url': 'http://www.udacity.com/'
     },
     {
-      'title': 'Course No. 2',
-      'school': 'The Random Online Course Corporation',
-      'date': 12312008,
-      'url': 'http://www.example.com/'
+      'title': 'Responsive Web Design Fundamentals',
+      'school': 'Udacity',
+      'date': 5312015,
+      'url': 'http://www.udacity.com/'
     }
   ]
 };
@@ -66,40 +76,33 @@ var education = {
 var work = {
   'jobs': [
     {
-      'employer': 'Employer No. 1',
-      'title': 'Title No. 1',
-      'location': 'Deseado Dept, Santa Cruz Province, Argentina',
-      'dates': 'September 14, 2009 - May 22, 2011',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      'employer': 'Me',
+      'title': 'President',
+      'location': 'My body',
+      'dates': 'Date of birth - now',
+      'description': 'Running a dictatorship'
     },
-    {
-      'employer': 'Employer No. 2',
-      'title': 'Title No. 2',
-      'location': 'Banks Island, NT, Canada',
-      'dates': 'June 18, 2011 - Present',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    }
   ]
 };
 
 var projects = {
   'projects': [
     {
-      'title': 'Project No. 1',
-      'dates': 'August 2, 2013 - November 29, 2014',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'title': 'Oversized Cruise Ship (Fouzzship)',
+      'dates': 'August 2014',
+      'description': 'With a capacity of over 200,000, this is my largest cruise ship design (yet).',
       'images': [
-        'images/197x148.gif',
-        'images/197x148.gif'
+        'images/cruise_ship_1.png',
+        'images/cruise_ship_2.png'
       ]
     },
     {
-      'title': 'Project No. 2',
-      'dates': 'June 5, 2014 - Present',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'title': 'Rittybox Website',
+      'dates': 'October 2014 - Present',
+      'description': 'A website for a "small company". Made to look similar to Apple\'s',
       'images': [
-        'images/197x148.gif',
-        'images/197x148.gif'
+        'images/rittybox_1.png',
+        'images/rittybox_2.png'
       ]
     }
   ]

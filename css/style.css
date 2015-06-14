@@ -11,8 +11,6 @@
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -218,15 +216,3 @@ span {
     display: block;
   }
 }
-
-@media only screen and (min-width: 1100px) {
-  .project-entry {
-    width: 50%;
-  }
-}
-
-/* Necessary so other flexbox items don't wrap to right behind the heading */
-.flex-heading {
-  width: 100%;
-}
-

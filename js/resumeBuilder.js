@@ -10,7 +10,7 @@ var bio = {
     'twitter': '@fouzzerjunk',
     'location': 'İzmir, Turkey'
   },
-  'welcomeMessage': '[Process exited with status 0] ... The crowd goes crazy.',
+  'welcomeMessage': 'Pure, condensed awesomeness!',
   'skills': [
     'PHP',
     'JavaScript',
@@ -29,19 +29,17 @@ var education = {
       'location': 'Beijing, China',
       'degree': 'No degree received (Not in a university ... yet)',
       'majors': [
-        'Getting kicked out of class',
-        'Low-speed Homework Completion!!',
+        'N/A'
       ],
       'dates': 4312010, // Dates now in mm/dd/yyyy format. Leading 0 will not be included due to problems using the octal format
       'url': '' //Not applicable
     },
     {
-      'name': 'Canadian elementary school',
+      'name': 'Canadian elementary school "gifted" program',
       'location': 'Ottawa, ON, Canada',
       'degree': 'N/A',
       'majors': [
-        'General education',
-        'Not getting kicked out of class'
+        'N/A',
       ],
       'dates': 4242014,
       'url': 'http://www.ocdsb.ca/'
@@ -51,7 +49,7 @@ var education = {
       'location': 'İzmir, Turkey',
       'degree': 'N/A',
       'majors': [
-        'Getting bored'
+        'N/A'
       ],
       'dates': 3042015,
       'url': 'http://www.ocdsb.ca/'

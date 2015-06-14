@@ -92,8 +92,8 @@ var projects = {
       'dates': 'August 2014',
       'description': 'With a capacity of over 200,000, this is my largest cruise ship design (yet).',
       'images': [
-        'images/fouzzship_1_lg.png',
-        'images/fouzzship_2_lg.png'
+        'images/fouzzship_1_md.png',
+        'images/fouzzship_2_md.png'
       ]
     },
     {
@@ -101,8 +101,8 @@ var projects = {
       'dates': 'October 2014 - Present',
       'description': 'A website for a "small company". Made to look similar to Apple\'s',
       'images': [
-        'images/rittybox_1_lg.png',
-        'images/rittybox_2_lg.png'
+        'images/rittybox_1_md.png',
+        'images/rittybox_2_md.png'
       ]
     }
   ]
